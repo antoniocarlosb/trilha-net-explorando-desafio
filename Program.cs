@@ -8,18 +8,40 @@ List<Pessoa> hospedes = new List<Pessoa>();
 
 Pessoa p1 = new Pessoa(nome: "Hóspede 1");
 Pessoa p2 = new Pessoa(nome: "Hóspede 2");
+Pessoa p3 = new Pessoa(nome: "Hóspede 3");
+Pessoa p4 = new Pessoa(nome: "Hóspede 1");
+Pessoa p5 = new Pessoa(nome: "Hóspede 2");
+Pessoa p6 = new Pessoa(nome: "Hóspede 3");
+Pessoa p7 = new Pessoa(nome: "Hóspede 1");
+Pessoa p8 = new Pessoa(nome: "Hóspede 2");
+Pessoa p9 = new Pessoa(nome: "Hóspede 3");
+Pessoa p10 = new Pessoa(nome: "Hóspede 1");
+Pessoa p11 = new Pessoa(nome: "Hóspede 2");
+Pessoa p12 = new Pessoa(nome: "Hóspede 3");
+
 
 hospedes.Add(p1);
 hospedes.Add(p2);
+hospedes.Add(p3);
+hospedes.Add(p4);
+hospedes.Add(p5);
+hospedes.Add(p6);
+hospedes.Add(p7);
+hospedes.Add(p8);
+hospedes.Add(p9);
+hospedes.Add(p10);
+hospedes.Add(p11);
+hospedes.Add(p12);
 
 // Cria a suíte
-Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
+Suite suite = new Suite(tipoSuite: "Premium", capacidade: 15, valorDiaria: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
-Reserva reserva = new Reserva(diasReservados: 5);
+Reserva reserva = new Reserva(diasReservados: 12);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 
 // Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
 Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+
